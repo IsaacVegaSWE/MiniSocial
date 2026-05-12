@@ -7,7 +7,8 @@ const PORT = process.env.PORT || 3000;
 
 // Allow requests from frontend only
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  
+  origin: "https://isaacvegaswe.github.io/MiniSocial/",
   methods: ['GET', 'POST', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
