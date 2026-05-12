@@ -18,9 +18,9 @@ app.use(express.json());
  * Routes
  * server.js is in /backend, so we go up one level to reach /routes
  */
-app.use('/api/auth',  require('../routes/auth'));
-app.use('/api/posts', require('../routes/posts'));
-app.use('/api/users', require('../routes/users'));
+app.use('/api/auth',  require('./routes/auth'));
+app.use('/api/posts', require('./routes/posts'));
+app.use('/api/users', require('./routes/users'));
 
 // Health check
 app.get('/health', (req, res) => {
